@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Tic Tac Toe - Oria Malul</title>
+</head>
+
+<body>
+  <div class="players-modal" id="players-modal">
+    <div class="modal-content">
+      <div class="welcome-message">
+        <h1>Welcome to Tic Tac Toe!</h1>
+        <h2>Please enter your names.</h2>
+      </div>
+
+      <div class="players">
+        <div class="player-one">
+          <h3>Player One:</h3>
+          <input type="text" id="one-name" placeholder="Player 1">
+        </div>
+        <div class="player-two">
+          <h3>Player Two:</h3>
+          <input type="text" id="two-name" placeholder="Player 2">
+        </div>
+      </div>
+
+      <button class="continue-btn" id="continue-btn">
+        Play
+      </button>
+    </div>
+  </div>
+
+  <div class="message-modal" id="message-modal">
+    <div class="modal-content">
+      <div id="message">Player 1 wins!</div>
+      <button class="retry-button" id="retry-button">
+        Play Again <i class="fas fa-redo"></i>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <div class="scoreboard">
+      <div class="player-info active-player">
+        <div>X</div>
+        <div id="player-one-name">Player 1</div>
+        <div id="player-one-score">&ndash;</div>
+      </div>
+
+      <div class="player-info">
+        <div>O</div>
+        <div id="player-two-name">Player 2</div>
+        <div id="player-two-score">&ndash;</div>
+      </div>
+    </div>
+
+    <div class="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      Built by OriaMalul
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
